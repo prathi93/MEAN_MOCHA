@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        bat 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\basic\\database'
+        bat 'node dataFile.js'
         echo 'Build is sucessfull'
-        bat 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\basic\\controller\\'
-        bat 'node template.js'
       }
     }
     stage('UnitTest') {
