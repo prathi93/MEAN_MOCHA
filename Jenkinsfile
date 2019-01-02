@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build is sucessfull'
+        bat 'node C:\\Users\\ps268\\OneDrive - DXC Production\\Prashanth\\Projects\\basic-master\\controller\\template.js'
       }
     }
     stage('UnitTest') {
