@@ -1,0 +1,16 @@
+html
+	head
+		title employee
+		script(type='text/javascript' src="https://code.jquery.com/jquery-3.3.1.min.js")
+		script(src="/javascripts/jade1.js")
+			
+
+	body
+		form(action='/worksheet',method="POST")
+			div
+				label(for="wname") Name:
+				input(type="text" name="wname" value="" placeholder="worksheetname")
+			br
+			button(type="submit") Save
+			br 
+			a(href="http://127.0.0.1:8000/templete") Back to template

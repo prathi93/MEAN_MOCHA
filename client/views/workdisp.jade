@@ -1,0 +1,19 @@
+html
+   head
+      title worksheet
+   body
+      
+      if(type == "error")
+         h3(style = "color:red") #{message}
+
+      else
+            h3 New worksheet, 
+            wname: #{JSON.stringify(person.wname)} is added! 
+            br
+            button(type='button' onclick='wedit()') Worksheet 
+                      script.
+                        function wedit(){
+                        window.location.href="http://127.0.0.1:8000/worksheet/display"
+                        }
+
+      

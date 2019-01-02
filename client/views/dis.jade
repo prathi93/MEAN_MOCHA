@@ -1,0 +1,17 @@
+html
+    head
+        title name
+    body
+      
+         table.table.table(border=5)
+            thead
+                tr: th worksheet
+            tbody
+                each workSchema in user
+                  tr  
+                      td=workSchema.wname
+         button(type='button' onclick='back()') Back 
+                      script.
+                        function back(){
+                        window.location.href="http://127.0.0.1:8000/worksheet/create"
+                        }
