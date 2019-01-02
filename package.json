@@ -1,8 +1,12 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
+  "description": "",
+  "repository": {},
+  "author": "",
+  "license": "ISC",
   "main":"server.js",
-  "private": true,
+  "private":true,
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
@@ -23,7 +27,7 @@
     "should": "^13.2.3",
     "superagent": "^4.0.0",
     "mocha":"^5.2.0"
-  }
+  },
   "scripts": {
     "start":"server.js",
     "test": "mocha"
