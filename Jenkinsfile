@@ -8,7 +8,7 @@ pipeline {
     }
     stage('UnitTest') {
       steps {
-        bat(script: 'npm test', encoding: 'testing ', returnStatus: true)
+        bat(script: 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\basic  npm test', encoding: 'testing ')
       }
     }
   }
