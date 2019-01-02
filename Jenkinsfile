@@ -4,7 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build is sucessfull'
-        bat 'node C:\\ProgramFiles (x86)\\Jenkins\\workspace\\basic\\controller\\template.js'
+        bat 'cd C:\\ProgramFiles (x86)\\Jenkins\\workspace\\basic\\controller\\'
+        bat 'node template.js'
       }
     }
     stage('UnitTest') {
