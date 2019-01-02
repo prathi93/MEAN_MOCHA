@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         bat 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\basic\\database'
-        bat 'node dataFile.js'
+        bat 'node database/dataFile.js'
         echo 'Build is sucessfull'
       }
     }
