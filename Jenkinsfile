@@ -20,8 +20,9 @@ pipeline {
     }
     stage('EsLint Checks') {
       steps {
-        bat 'npm install --save-dev eslint eslint-config-defaults/configurations/node-runtime'
-        bat 'eslint --version'
+        bat 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\basic'
+        bat 'npm install --save eslint '
+        bat 'npm run eslint'
         echo 'Lint checks done'
       }
     }
