@@ -21,7 +21,7 @@ pipeline {
     stage('EsLint Checks') {
       steps {
         bat 'npm i eslint --save-dev'
-        bat 'eslint --version'
+        bat 'node node_modules\\eslint\\bin\\eslint.js --init'
         echo 'Lint checks done'
       }
     }
