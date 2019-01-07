@@ -21,7 +21,7 @@ pipeline {
     stage('EsLint Checks') {
       steps {
         bat 'npm i -g eslint'
-        bat 'eslint -c config.eslintrc -f checkstyle server.js > eslint.xml'
+        bat 'eslint --version'
         echo 'Lint checks done'
       }
     }
