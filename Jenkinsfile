@@ -20,7 +20,7 @@ pipeline {
     }
     stage('EsLint Checks') {
       steps {
-        bat 'npm i -g eslint'
+        bat 'npm i eslint --save-dev'
         bat 'eslint --version'
         echo 'Lint checks done'
       }
