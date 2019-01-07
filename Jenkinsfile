@@ -20,8 +20,8 @@ pipeline {
     }
     stage('EsLint Checks') {
       steps {
-        bat 'npm install --save-dev eslint eslint-config-defaults'
-        bat 'npm run eslint'
+        bat 'npm install --save-dev eslint eslint-config-defaults/configurations/node-runtime'
+        bat 'eslint --version'
         echo 'Lint checks done'
       }
     }
