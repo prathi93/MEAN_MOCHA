@@ -22,20 +22,11 @@
     "chai-http": "^4.2.0",
     "request": "^2.88.0",
     "should": "^13.2.3",
-    "mocha": "^5.2.0",
-    "eslint": "^5.11.1"
+    "mocha": "^5.2.0"
     
   },
-  "keywords": [
-    "eslint",
-    "eslint-plugin",
-    "eslintplugin",
-    "react"
-  ],
   "scripts": {
     "start":"server.js",
-    "test": "mocha",
-    "lint": "eslint ./"
-    
+    "test": "mocha"    
   }
 }
