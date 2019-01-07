@@ -18,5 +18,12 @@ pipeline {
         echo 'All unit test are passed succesfully'
       }
     }
+    stage('EsLint Checks') {
+      steps {
+        bat(script: 'npm i -g eslint', returnStatus: true)
+        bat 'eslint -c config.eslintrc -f checkstyle test/* > eslint.xml'
+        echo 'Lint checks done'
+      }
+    }
   }
 }
