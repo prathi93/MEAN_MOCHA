@@ -27,7 +27,6 @@
   },
   "scripts": {
     "start":"server.js",
-    "lint":"eslint ./controller",
     "test": "mocha"    
   }
 }
