@@ -1,6 +1,0 @@
-<fileset dir="${controller}" casesensitive="yes">
-  <patternset id="non.test.sources">
-    <include name="**/*.js"/>
-    <exclude name="**/*Test*"/>
-  </patternset>
-</fileset>
