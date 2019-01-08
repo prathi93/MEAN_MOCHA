@@ -22,11 +22,14 @@
     "chai-http": "^4.2.0",
     "request": "^2.88.0",
     "should": "^13.2.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "eslint": "^5.12.0"
     
   },
   "scripts": {
     "start":"server.js",
+    "lint": "eslint server.js",
+    "ci-lint": "eslint -f checkstyle server.js > checkstyle-result.xml",
     "test": "mocha"    
   }
 }
