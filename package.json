@@ -28,6 +28,7 @@
   },
   "scripts": {
     "start":"server.js",
+    "lint":"eslint .\",
     "ci-lint": "eslint -c config.eslintrc -f checkstyle server.js > checkstyle-result.xml",
     "test": "mocha"    
   }
