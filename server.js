@@ -10,7 +10,7 @@ var app=express();
 
 // //var worksheet=require('./controller/worksheet.js');
 
- mongoose.connect(config.mongoURI[app.settings.env], function(err, result) {
+ mongoose.connect(config.mongoURI[app.settings.env], function(err, response) {
    if(err) {
  //    console.log('Error connecting to the database. ' + err);
    } else {
