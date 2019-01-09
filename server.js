@@ -5,12 +5,12 @@ var mongoose = require("mongoose");
 // index and api object contain the path of routing  files for our application
 var api=require('./routes/api');
 var app=express();
-
+var data;
  var config = require('./routes/config');
 
 // //var worksheet=require('./controller/worksheet.js');
 
- mongoose.connect(config.mongoURI[app.settings.env], function(err, response) {
+ mongoose.connect(config.mongoURI[app.settings.env], function(err, data) {
    if(err) {
  //    console.log('Error connecting to the database. ' + err);
    } else {
