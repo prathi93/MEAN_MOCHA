@@ -5,7 +5,6 @@ var mongoose = require("mongoose");
 // index and api object contain the path of routing  files for our application
 var api=require('./routes/api');
 var app=express();
-var data;
  var config = require('./routes/config');
 
 // //var worksheet=require('./controller/worksheet.js');
