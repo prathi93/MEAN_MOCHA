@@ -22,8 +22,8 @@ pipeline {
       steps {
         bat 'npm -g i eslint-cli'
         bat 'npm i eslint --save-dev'
-        echo 'Lint checks done'
         bat 'npm run ci-lint'
+        echo 'Lint checks done'
       }
     }
   }
