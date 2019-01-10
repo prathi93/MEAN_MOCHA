@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start":"server.js",
-    "ci-lint": "./node_modules/.bin/eslint *.js --fix --debug > checkstyle-result.xml",
+    "ci-lint": "./node_modules/.bin/eslint **/*.js --fix --debug > checkstyle-result.xml",
     "test": "mocha"    
   }
 }
