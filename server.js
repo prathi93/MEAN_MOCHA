@@ -14,6 +14,8 @@ var app=express();
      console.log('Error connecting to the database. ' + err);
    } else {
      console.log('Connected to Database: ' + config.mongoURI[app.settings.env]);
+
+	Hi this is Prathiba Kubera
    }
  });
 
